@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hello"
+version = "0.1.0"
+description = ""
+authors = ["Sizov <<wwwwwwwww@list.ru>>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+colorama = "^0.4.5"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.5.0"
+
+[tool.poetry.scripts]
+say-hello = "hello.scripts.say_hello:main"
+say-poka = "hello.scripts.say_poka:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
